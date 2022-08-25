@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="submit" type="button" value="Click" onmousedown="viewDiv()" >Отправить</button>
+    <div id="popup">
+                <form id="form" action="#" class="form">
+                    <div class="form__content">
+                        <div class=""><a href="" type="button" value="Click" onmousedown="popupClose()">X</a></div>
+                        <div class="form__title">Submit your website for free</div>
+                            <div class="form__field">
+                                <input id="url" type="url" onkeyup="checkParams()" placeholder="Ваш сайт" />
+                                <span class="form__error">Это поле должно содержать URL в формате http://mysite.ru</span>
+                            </div>
+                            <button id="submit" class="submit" type="button"  value="Click" onmousedown="viewDiv2()" disabled >Отправить</button>
+                    </div>
+                </form>
+</div>
+<div id="popup2">
+    <form id="form" action="#" class="form">
+        <div class="form__content">
+            <div class=""><a href="">X</a></div>
+            <div class="form__title">Submit your website for free</div>
+                <button class="submit" type="button" value="Click"  >Отправить</button>
+        </div>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
